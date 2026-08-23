@@ -4,10 +4,9 @@ ALTER TABLE "public"."profiles"
 	DROP CONSTRAINT "username_length_constraint";
 
 ALTER TABLE "public"."profiles"
-	ALTER COLUMN "username" SET data TYPE citext USING "username"::citext;
+	ALTER COLUMN "username" SET data TYPE extensions.citext USING "username"::extensions.citext;
 
 ALTER TABLE "public"."profiles"
 	ADD CONSTRAINT "username_length_constraint" CHECK (((length((username)::text) >= 3) AND (length((username)::text) <= 50))) NOT valid;
 
 ALTER TABLE "public"."profiles" validate CONSTRAINT "username_length_constraint";
-

@@ -19,8 +19,8 @@ CREATE TABLE "public"."radolan_data" (
 
 CREATE TABLE "public"."radolan_geometry" (
 	"id" integer NOT NULL DEFAULT nextval('radolan_geometry_id_seq'::regclass),
-	"geometry" geometry(polygon, 4326),
-	"centroid" geometry(point, 4326)
+	"geometry" extensions.geometry(polygon, 4326),
+	"centroid" extensions.geometry(point, 4326)
 );
 
 CREATE TABLE "public"."radolan_harvester" (
@@ -32,7 +32,7 @@ CREATE TABLE "public"."radolan_harvester" (
 
 CREATE TABLE "public"."radolan_temp" (
 	"id" integer NOT NULL DEFAULT nextval('radolan_temp_id_seq'::regclass),
-	"geometry" geometry(MultiPolygon, 4326),
+	"geometry" extensions.geometry(MultiPolygon, 4326),
 	"value" smallint,
 	"measured_at" timestamp without time zone
 );
@@ -60,7 +60,7 @@ CREATE TABLE "public"."trees" (
 	"watered" text,
 	"radolan_sum" integer,
 	"radolan_days" integer[],
-	"geom" geometry(point, 4326),
+	"geom" extensions.geometry(point, 4326),
 	"standortnr" text,
 	"kennzeich" text,
 	"caretaker" text,
@@ -132,4 +132,3 @@ ALTER TABLE "public"."trees_watered"
 	ADD CONSTRAINT "trees_watered_amount_check" CHECK ((amount > (0)::numeric)) NOT valid;
 
 ALTER TABLE "public"."trees_watered" validate CONSTRAINT "trees_watered_amount_check";
-
