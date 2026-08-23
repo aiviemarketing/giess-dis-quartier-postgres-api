@@ -83,3 +83,48 @@ node --test gdq/scripts/sync-zurich-trees.test.mjs
 
 Source: [City of Zurich Baumkataster](https://data.stadt-zuerich.ch/dataset/geo_baumkataster)
 (CC0, WGS84 GeoJSON service, weekly updates).
+
+## Zurich fountains
+
+`scripts/sync-zurich-fountains.mjs` turns the official City of Zurich fountain
+WFS into the existing pump GeoJSON contract. It preserves the numeric source
+`objectid` as `id`, translates `abgestellt` to the existing pump status, and
+keeps the official source GUID in `gdq:source_id` for traceability.
+
+The command is a dry run unless `--output` is given. Its inclusion policy is
+deliberately explicit: it does not silently decide whether private or
+deactivated fountains belong in the watering map.
+
+```bash
+node gdq/scripts/sync-zurich-fountains.mjs
+
+# Preview the conservative candidate set; this only writes an ignored local artifact.
+node gdq/scripts/sync-zurich-fountains.mjs \
+  --only-public --exclude-deactivated \
+  --output gdq/output/zurich-fountains.geojson
+```
+
+After the resulting counts and inclusion policy are approved, the next small
+step is to upload that artifact to local Supabase Storage and point the local
+frontend launcher at its public local URL.
+
+The localhost-only uploader refuses any remote Supabase URL. Supply the local
+service-role token only through the process environment:
+
+```bash
+SUPABASE_URL=http://127.0.0.1:54321 \
+SUPABASE_SERVICE_ROLE_KEY="$LOCAL_SERVICE_ROLE_KEY" \
+  node gdq/scripts/upload-local-supabase-storage.mjs \
+    --object zurich-fountains.geojson \
+    --file gdq/output/zurich-fountains.geojson
+```
+
+Run the adapter tests with:
+
+```bash
+node --test gdq/scripts/sync-zurich-fountains.test.mjs
+node --test gdq/scripts/upload-local-supabase-storage.test.mjs
+```
+
+Source: [City of Zurich fountains](https://data.stadt-zuerich.ch/dataset/geo_brunnen)
+(CC0, WGS84 GeoJSON service, daily updates).
