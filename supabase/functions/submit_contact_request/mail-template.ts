@@ -75,7 +75,7 @@ export const mailTemplate = (
 												text-decoration: none;
 												text-shadow: 0 1px 0 white;
 											"
-											href="https://giessdenkiez.de/"
+											href="{{ .SiteURL }}"
 											class="email-masthead_name"
 										>
 											<img
@@ -86,7 +86,7 @@ export const mailTemplate = (
 													box-sizing: border-box;
 													max-height: 50px;
 												"
-												src="https://www.giessdenkiez.de/images/icon-trees.svg"
+												src="{{ .SiteURL }}/images/icon-trees.svg"
 												class="email-logo"
 												alt=""
 											/>
@@ -141,7 +141,7 @@ export const mailTemplate = (
 														class="content-cell"
 													>
                                                         <p>
-                                                            Kontaktanfrage auf Gieß den Kiez
+                                                            Kontaktanfrage auf Güss dis Quartier
                                                         </p>
 														<p>
 															* * * For the English version of this email, please see below. * * *
@@ -158,8 +158,8 @@ export const mailTemplate = (
 																box-sizing: border-box;
 															"
 														>
-															Gieß den
-															<span style="color: #37de8a">Kiez</span>
+															Güss dis
+															<span style="color: #37de8a">Quartier</span>
 														</h1>
 
 														<p
@@ -216,8 +216,8 @@ export const mailTemplate = (
 																box-sizing: border-box;
 															"
 														>
-															Gieß den
-															<span style="color: #37de8a">Kiez</span>
+															Güss dis
+															<span style="color: #37de8a">Quartier</span>
 														</h1>
 
 														<p
@@ -355,9 +355,9 @@ export const mailTemplate = (
                                                             box-sizing: border-box;
                                                         "
                                                     >
-                                                        Gieß den Kiez ist eine Anwendung, die hilft,
+                                                        Güss dis Quartier ist eine Anwendung, die hilft,
                                                         ehrenamtliches Engagement beim Gießen durstiger
-                                                        Stadtbäume zu koordinieren. Gieß den Kiez ist
+                                                        Stadtbäume zu koordinieren. Güss dis Quartier ist
                                                         ein Projekt der
                                                         <a
                                                             style="color: unset"

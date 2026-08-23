@@ -1,5 +1,5 @@
 {
-	"name": "@aivie/giess-dis-quartier-postgres-api",
+	"name": "@aivie/guess-dis-quartier-postgres-api",
 	"version": "2.0.0",
 	"private": true,
 	"license": "MIT",
@@ -29,18 +29,17 @@
 		"semantic-release": "23.1.1",
 		"ts-jest": "29.1.2"
 	},
-	"description": "API for Giess dis Quartier to communicate with Aivie's PostgreSQL database hosted on Vercel.",
+	"description": "API for Güss dis Quartier to communicate with Aivie's PostgreSQL database hosted on Vercel.",
 	"keywords": [
-		"giessdenkiez.de",
-		"giess-dis-quartier",
+		"guess-dis-quartier",
 		"aivie"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/aiviemarketing/giess-dis-quartier-postgres-api.git"
+		"url": "git+https://github.com/aiviemarketing/guess-dis-quartier-postgres-api.git"
 	},
 	"bugs": {
-		"url": "https://github.com/aiviemarketing/giess-dis-quartier-postgres-api/issues"
+		"url": "https://github.com/aiviemarketing/guess-dis-quartier-postgres-api/issues"
 	},
 	"homepage": "https://aivie.ch",
 	"author": "adiux (https://aivie.ch)",

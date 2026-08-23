@@ -285,3 +285,5 @@ sql/*.dump
 .cursor/rules/*
 .cursor/mcp.json
 graphify-out
+.env.prod
+.gitignore

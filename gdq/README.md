@@ -1,4 +1,4 @@
-# Giess dis Quartier local adaptations
+# Güss dis Quartier local adaptations
 
 This directory contains Zurich-specific tooling. It deliberately does not alter
 the upstream Supabase schema, functions, or application code.

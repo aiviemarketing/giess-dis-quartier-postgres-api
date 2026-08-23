@@ -1,6 +1,6 @@
 ![love badge](https://img.shields.io/badge/Built%20with-%E2%99%A5-red)
 
-# Giess dis Quartier API
+# Güss dis Quartier API
 
 Local Supabase API, database schema, and Zurich data adapters for the Giess dis
 Quartier MVP. The frontend, this API, and the weather tooling form one local
@@ -8,7 +8,7 @@ development stack.
 
 ## About
 
-This Aivie fork provides the API layer for Giess dis Quartier. In deployment, it connects the application to Aivie's PostgreSQL database.
+This Aivie fork provides the API layer for Güss dis Quartier. In deployment, it connects the application to Aivie's PostgreSQL database.
 Learn more at [aivie.ch](https://aivie.ch).
 
 ## Local development
@@ -16,8 +16,8 @@ Learn more at [aivie.ch](https://aivie.ch).
 Install the Node dependencies and start local Supabase:
 
 ```bash
-git clone https://github.com/aiviemarketing/giess-dis-quartier-postgres-api.git
-cd giess-dis-quartier-postgres-api
+git clone https://github.com/aiviemarketing/guess-dis-quartier-postgres-api.git
+cd guess-dis-quartier-postgres-api
 source /Users/Adrian/.nvm/nvm.sh
 nvm use
 npm ci
@@ -45,7 +45,7 @@ The Zurich-specific tools live in [gdq/README.md](gdq/README.md):
 - Mapbox tree-tile artifact generation and publication.
 
 The active MeteoSwiss CPC rain importer lives with the frontend. Follow the
-[CPC integration guide](https://github.com/aiviemarketing/giess-dis-Quartier/blob/main/gdq/cpc/README.md)
+[CPC integration guide](https://github.com/aiviemarketing/guess-dis-quartier/blob/main/gdq/cpc/README.md)
 to import and aggregate local rain data.
 
 ## Database workflow
@@ -100,7 +100,7 @@ ALTER TABLE trees ENABLE TRIGGER tg_refresh_total_tree_species_count_mv;
 
 ## Contributors
 
-- [Adrian Schimpf (`adiux`)](https://github.com/adiux) — Giess dis Quartier adaptation.
+- [Adrian Schimpf (`adiux`)](https://github.com/adiux) — Güss dis Quartier adaptation.
 
 ## Acknowledgements
 
