@@ -1,5 +1,5 @@
 {
-	"name": "@technologiestiftung/giessdenkiez-de-postgres-api",
+	"name": "@aivie/giess-dis-quartier-postgres-api",
 	"version": "2.0.0",
 	"private": true,
 	"license": "MIT",
@@ -29,20 +29,23 @@
 		"semantic-release": "23.1.1",
 		"ts-jest": "29.1.2"
 	},
-	"description": "Supabase configuration for the giessdenkiez.de project to interact ",
+	"description": "API for Giess dis Quartier to communicate with Aivie's PostgreSQL database hosted on Vercel.",
 	"keywords": [
-		"giessdenkiez.de"
+		"giessdenkiez.de",
+		"giess-dis-quartier",
+		"aivie"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/technologiestiftung/giessdenkiez-de-postgres-api.git"
+		"url": "git+https://github.com/aiviemarketing/giess-dis-quartier-postgres-api.git"
 	},
 	"bugs": {
-		"url": "https://github.com/technologiestiftung/giessdenkiez-de-postgres-api/issues"
+		"url": "https://github.com/aiviemarketing/giess-dis-quartier-postgres-api/issues"
 	},
-	"homepage": "https://github.com/technologiestiftung/giessdenkiez-de-postgres-api#readme",
-	"author": "Fabian Morón Zirfas <hash@ff6347.email> (https://fabianmoronzirfas.me)",
+	"homepage": "https://aivie.ch",
+	"author": "adiux (https://aivie.ch)",
 	"contributors": [
+		"adiux",
 		"@fdnklg"
 	]
 }

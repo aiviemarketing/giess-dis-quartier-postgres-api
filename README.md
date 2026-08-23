@@ -6,6 +6,11 @@ Local Supabase API, database schema, and Zurich data adapters for the Giess dis
 Quartier MVP. The frontend, this API, and the weather tooling form one local
 development stack.
 
+## About
+
+This Aivie fork provides the API layer for Giess dis Quartier. In deployment, it connects the application to Aivie's PostgreSQL database.
+Learn more at [aivie.ch](https://aivie.ch).
+
 ## Local development
 
 Install the Node dependencies and start local Supabase:
@@ -99,8 +104,8 @@ ALTER TABLE trees ENABLE TRIGGER tg_refresh_total_tree_species_count_mv;
 
 ## Acknowledgements
 
-This work builds on contributions by Fabian Morón Zirfas, Fabian, Warenix,
-Daniel Sippel, Sebastian Meier, Lucas Vogel, Dennis, and Julia Zet.
+Thanks to the upstream contributors who made Giess den Kiez possible:
+https://github.com/technologiestiftung/giessdenkiez-de#contributors-
 
 ## MVP sponsor
 
