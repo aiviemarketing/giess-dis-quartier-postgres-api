@@ -253,7 +253,7 @@ export const mailTemplate = (
                                                         box-sizing: border-box;
                                                         color: #aeaeae;
                                                         font-size: 14px;
-                                                        text-align: center;">We apologize if the contact request contains inappropriate content. Please notify our team immediately via info@citylab-berlin.org.</i>
+                                                        text-align: center;">We apologize if the contact request contains inappropriate content. Please notify our team immediately via info@aivie.ch.</i>
 														</p>
 
 														<p
@@ -269,21 +269,21 @@ export const mailTemplate = (
 																padding-top: 1rem;
 															"
 														>
-															Technologiestiftung Berlin
+															Aivie by Idea 2 Collective GmbH
 															<br />
-															Grunewaldstraße 61-62
+															Wengistrasse 6
 															<br />
-															10825 Berlin
+															8004 Zürich
 															<br />
 															Tel.:
 															<a style="color: unset" href="tel:+493020969990"
-																>+49 30 209 69 99 0</a
+																>+41 43 883 06 72</a
 															>
 															<br />
 															<a
 																style="color: unset"
-																href="mailto:info@technologiestiftung-berlin.de"
-																>info@technologiestiftung-berlin.de</a
+																href="mailto:info@aivie.ch"
+																>info@aivie.ch</a
 															>
 															<br />
 															<br />
