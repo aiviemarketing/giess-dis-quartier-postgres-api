@@ -356,21 +356,14 @@ export const mailTemplate = (
                                                         "
                                                     >
                                                         Güss dis Quartier ist eine Anwendung, die hilft,
-                                                        ehrenamtliches Engagement beim Gießen durstiger
-                                                        Stadtbäume zu koordinieren. Güss dis Quartier ist
-                                                        ein Projekt der
-                                                        <a
-                                                            style="color: unset"
-                                                            href="https://www.technologiestiftung-berlin.de/"
-                                                            >Technologiestiftung Berlin</a
-                                                        >
-                                                        und wird vom
-                                                        <a
-                                                            style="color: unset"
-                                                            href="https://citylab-berlin.org/"
-                                                            >CityLAB Berlin</a
-                                                        >
-                                                        entwickelt.
+                                                        ehrenamtliches Engagement beim Giessen durstiger
+                                                        Stadtbäume zu koordinieren. Güss dis Quartier
+																wird gesponsort und betrieben von 
+																<a
+																	style="color: unset"
+																	href="https://aivie.ch/?utm_source=gdq&utm_medium=gdq-app&utm_campaign=human&utm_content=email-reset-password-de"
+																	>Aivie</a
+																>.
                                                     </i>
 														</p>
 													</td>
